@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var cricketplayer_1 = require("./cricketplayer");
+var player_1 = require("./player");
+var team_1 = require("./team");
+var p1 = new player_1.Player(100, "Sachin");
+p1.printPlayer();
+var team = new team_1.Team(1000, "INDIA", "Ravi Shastri");
+var cp = new cricketplayer_1.CricketPlayer(999, "Sachin R Tendulkar", 200, team);
+cp.printCricketPlayer();
+var player = cp;
+console.log("after casting");
+player.printPlayer();
