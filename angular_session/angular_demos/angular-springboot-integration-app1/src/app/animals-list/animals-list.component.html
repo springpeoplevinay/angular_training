@@ -1,0 +1,23 @@
+<div class="container">
+    <table *ngIf="animals.length > 0" class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Category</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let animal of animals">
+                <td>{{animal.id}}</td>
+                <td>{{animal.name}}</td>
+                <td>{{animal.age}}</td>
+                <td>{{animal.category}}</td>
+                <td><img class="img-circle" style="height: 150px; width: 150px;" [src]="animal.avatar"></td>
+            </tr>
+        </tbody>
+    </table>
+    <span style="color:red" *ngIf="animals.length==0">No animals in the Storage </span>
+</div>

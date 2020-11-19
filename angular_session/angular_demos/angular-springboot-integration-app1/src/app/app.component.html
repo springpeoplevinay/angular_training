@@ -1,0 +1,36 @@
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to {{title}}</h1>
+  <hr class="my-4">
+  <ul class="list-group">
+    <li class="list-group-item ">Demo on Integration of Spring Boot and Angular</li>
+    <li class="list-group-item " >Demo on Routing Concept of Angular(SPA)</li>
+    <li class="list-group-item " >Demo on HttpClient/HttpClientModule(rxjs)</li>
+  </ul>
+</div>
+
+<div class="container">
+  <nav class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/addAnimal">Add Animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/deleteAnimal">Delete Animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/updateAnimal">Update Animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/searchAnimal">Search Animal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/animalsList">View All Animals</a>
+    </li>
+  </nav>
+</div>
+
+<br/>
+<br/>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

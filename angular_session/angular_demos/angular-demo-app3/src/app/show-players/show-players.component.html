@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="container" >
+        <h4>Player's List</h4>
+        <table class="table table-dark">
+            <thead class="thead-light">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>TeamName</th>
+                    <th>Image/Avatar</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of players">
+                    <td>{{p.id}}</td>
+                    <td>{{p.name}}</td>
+                    <td>{{p.age}}</td>
+                    <td>{{p.teamName}}</td>
+                    <td><img [src]="p.avatar" height="150px" width="250px"></td>
+                </tr>
+            </tbody>
+        </table>
+    
+</div>

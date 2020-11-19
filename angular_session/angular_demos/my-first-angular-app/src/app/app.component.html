@@ -1,0 +1,12 @@
+<span>{{ title }}  is running!</span>
+<h1>Hello Developer {{developer}}</h1>
+
+<div>
+    <h2>User Data</h2>
+    <h3>User Id  : {{user.id}}</h3>
+    <h3>User Name  : {{user.name}}</h3>
+    <img [src]="user.avatar" height="200px" width="250px">
+
+    <h3 *ngIf="flag"> hello Message : {{hello}}</h3><br/>
+    <button (click)="sayHello()">Click Me</button>
+</div>

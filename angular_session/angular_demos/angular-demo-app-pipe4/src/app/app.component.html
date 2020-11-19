@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1 class="display-4">Pipes Demo</h1>
+  </div>
+
+  <div class="container">
+    <h2 style="text-decoration: underline;">Predefined Pipes</h2>
+    <h4>Uppercase Pipe : {{title|uppercase}}</h4>
+    <h4>Lowercase Pipe : {{testName|lowercase}}</h4>
+    <h4>Date without Pipe : {{now}}</h4>
+    <h4>Date with Pipe : {{now | date:'dd/MM/yy'}}</h4>
+    <h4>Percentage Pipe : {{00.5666 | percent}}</h4>
+    <h4>Currency Pipe : {{79999.99 | currency:"INR"}}</h4>
+    <h4>JSON Obj without pipe : {{jsonObj}}</h4>
+    <h4>JSON Obj with json pipe : {{jsonObj | json}}</h4>
+    <h4>Slice Pipe : {{fruits | slice:3:6}}</h4>
+    
+    <h2  style="text-decoration: underline;">Custom Pipe Demo</h2>
+    <h4>Sqrt Pipe - Sqrt of 4 is :   {{4|sqrt}}</h4>
+    <h4>FullName Pipe : {{firstName|fullname:lastName}}</h4>
+  </div>

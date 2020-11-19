@@ -1,0 +1,26 @@
+<div class="container">
+<h3 style="text-decoration: underline;">Add Player</h3>
+<table class="table table-light">
+    
+    
+        <tr>
+            <td><input class="form-control" type="text" placeholder="Enter Player Id" [(ngModel)]="player.id"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control" type="text" placeholder="Enter Player Name" [(ngModel)]="player.name"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control" type="text" placeholder="Enter Player Age" [(ngModel)]="player.age"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control" type="text" placeholder="Enter Player TeamName" [(ngModel)]="player.teamName"></td>
+        </tr>
+        <tr>
+            <td><input class="form-control" type="text" placeholder="Enter Player Image/Avatar" [(ngModel)]="player.avatar"></td>
+        </tr>
+        <tr>
+            <td><button class="btn btn-primary" type="button" (click)="addPlayer()">Add Player</button></td>
+        </tr>
+    
+</table>
+</div>

@@ -1,0 +1,8 @@
+<div class="container" >
+    <h1 style="text-decoration: underline;">Add Animal</h1>
+    <input class="form-control" type="text" placeholder="Enter Animal Name" [(ngModel)]="animal.name">
+    <input class="form-control" type="text" placeholder="Enter Animal Age" [(ngModel)]="animal.age">
+    <input class="form-control" type="text" placeholder="Enter Animal Category" [(ngModel)]="animal.category">
+    <input class="form-control" type="text" placeholder="Animal Image Url" [(ngModel)]="animal.avatar">
+    <button class="btn btn-primary" type="button" (click)="addAnimal()">Save</button>
+</div>
